@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2286DD35FE7B11A00799C1AB /* Pods_TradeIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E88F3D16D3EF01C4D092B5 /* Pods_TradeIt.framework */; };
 		EC58267829987F64002E262B /* currenciesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58267729987F64002E262B /* currenciesData.swift */; };
+		EC58267A2998A9CF002E262B /* dataHangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5826792998A9CF002E262B /* dataHangle.swift */; };
 		EC5F65B32996D676001613C6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5F65B22996D676001613C6 /* HomeVC.swift */; };
 		EC5F65B82996D717001613C6 /* CryptoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5F65B72996D717001613C6 /* CryptoVC.swift */; };
 		EC5F65BA2996D769001613C6 /* CurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5F65B92996D769001613C6 /* CurrencyVC.swift */; };
@@ -24,6 +25,7 @@
 		5437458B820B8896A3F7B1F9 /* Pods-TradeIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradeIt.release.xcconfig"; path = "Target Support Files/Pods-TradeIt/Pods-TradeIt.release.xcconfig"; sourceTree = "<group>"; };
 		E9E88F3D16D3EF01C4D092B5 /* Pods_TradeIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TradeIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC58267729987F64002E262B /* currenciesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currenciesData.swift; sourceTree = "<group>"; };
+		EC5826792998A9CF002E262B /* dataHangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataHangle.swift; sourceTree = "<group>"; };
 		EC5F65B22996D676001613C6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		EC5F65B72996D717001613C6 /* CryptoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoVC.swift; sourceTree = "<group>"; };
 		EC5F65B92996D769001613C6 /* CurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyVC.swift; sourceTree = "<group>"; };
@@ -62,7 +64,6 @@
 				25495374E952F6F40F5CCDF5 /* Pods-TradeIt.debug.xcconfig */,
 				5437458B820B8896A3F7B1F9 /* Pods-TradeIt.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				EC58267729987F64002E262B /* currenciesData.swift */,
+				EC5826792998A9CF002E262B /* dataHangle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,6 +248,7 @@
 				EC8908082994745700DB0C06 /* AppDelegate.swift in Sources */,
 				EC89080A2994745700DB0C06 /* SceneDelegate.swift in Sources */,
 				EC5F65B82996D717001613C6 /* CryptoVC.swift in Sources */,
+				EC58267A2998A9CF002E262B /* dataHangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
