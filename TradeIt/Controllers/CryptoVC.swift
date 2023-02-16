@@ -7,16 +7,8 @@
 
 import UIKit
 import DropDown
-class CryptoVC: UIViewController {
-    let currencyMenu: DropDown = {
-        let menu = DropDown()
-        var currencyNames: [String] = []
-        for money in currenciesData.countryCurrencies{
-            currencyNames.append(money.key)
-        }
-        menu.dataSource = currencyNames
-        return menu
-    }()
+class CryptoVC: UIViewController, TradeManagerDelegate {
+   
     
     let cryptoMenu: DropDown = {
         let menu = DropDown()
@@ -40,21 +32,30 @@ class CryptoVC: UIViewController {
     
     @IBOutlet var rateLabel: UILabel!
     
+    var tradeManager = TradeManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // home menu
+        
+        tradeManager.delegate = self
+        rateLabel.text = ""
+        
+        
+        
         cryptoMenu.anchorView = cryptoLabel
         cryptoMenu.width = 350
         cryptoMenu.backgroundColor = cryptoInput.backgroundColor
         cryptoMenu.textColor = cryptoAbb.textColor
         
-        // away menu
-        currencyMenu.anchorView = currencyLabel
-        currencyMenu.width = 350
-        currencyMenu.backgroundColor = cryptoInput.backgroundColor
-        currencyMenu.textColor = cryptoAbb.textColor
-        // Do any additional setup after loading the view.
     }
+    
+    
+    @IBAction func checkRateBtnPressed(_ sender: UIButton) {
+        if let fromCurrency = cryptoAbb.text, let toCurrency = currencyAbb.text, let amountEntered = cryptoInput.text{
+            tradeManager.fetchTrade(from: fromCurrency, to: toCurrency, amount: amountEntered)
+        }
+    }
+    
     
     @IBAction func cryptoDropDownPressed(_ sender: UIButton) {
         cryptoMenu.show()
@@ -63,14 +64,16 @@ class CryptoVC: UIViewController {
             self.cryptoAbb.text = currenciesData.cryptoCurrencies[title]
         }
     }
-    
-    @IBAction func currencyDropDownPressed(_ sender: UIButton) {
-        currencyMenu.show()
-        currencyMenu.selectionAction = {index, title in
-            self.currencyLabel.text = title
-            self.currencyAbb.text = currenciesData.countryCurrencies[title]
+    func didUpdateTrade(rate: String, result: String){
+        
+        DispatchQueue.main.sync {
+            self.currencyAmount.text = result
+            self.rateLabel.text = "1.00 \(self.cryptoAbb.text!) = \(rate) USD"
         }
     }
     
+    func didFailWithError(error: Error) {
+        print(error)
+    }
 
 }

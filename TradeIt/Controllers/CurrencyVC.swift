@@ -9,10 +9,9 @@ import UIKit
 import DropDown
 
 
-class CurrencyVC: UIViewController {
+class CurrencyVC: UIViewController, TradeManagerDelegate {
     
-    
-    let homeMenu: DropDown = {
+    let menu: DropDown = {
         let menu = DropDown()
         var currencyNames: [String] = []
         for money in currenciesData.countryCurrencies{
@@ -21,59 +20,62 @@ class CurrencyVC: UIViewController {
         menu.dataSource = currencyNames
         return menu
     }()
-    
-    let awayMenu: DropDown = {
-        let menu = DropDown()
-        var currencyNames: [String] = []
-        for money in currenciesData.countryCurrencies{
-            currencyNames.append(money.key)
-        }
-        menu.dataSource = currencyNames
-        return menu
-    }()
-    @IBOutlet var homeCurrency: UILabel!
-    @IBOutlet var homeAbb: UILabel!
-    @IBOutlet var homeInput: UITextField!
+    @IBOutlet var fromAbb: UILabel!
+    @IBOutlet var fromInput: UITextField!
     
     
-    @IBOutlet var awayCurrency: UILabel!
-    @IBOutlet var awayAbb: UILabel!
-    @IBOutlet var awayAmount: UILabel!
+    @IBOutlet var toCurrencyName: UILabel!
+    @IBOutlet var toAbb: UILabel!
+    @IBOutlet var toAmount: UILabel!
     
     @IBOutlet var rateLabel: UILabel!
+    
+    var tradeManager = TradeManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // home menu
-        homeMenu.anchorView = homeInput
-        homeMenu.width = 350
-        homeMenu.backgroundColor = homeInput.backgroundColor
-        homeMenu.textColor = homeAbb.textColor
+        tradeManager.delegate = self
+        
+        rateLabel.text = ""
         
         // away menu
-        awayMenu.anchorView = awayAmount
-        awayMenu.width = 350
-        awayMenu.backgroundColor = homeInput.backgroundColor
-        awayMenu.textColor = homeAbb.textColor
+        menu.anchorView = toAmount
+        menu.width = 350
+        menu.backgroundColor = fromInput.backgroundColor
+        menu.textColor = fromAbb.textColor
         // Do any additional setup after loading the view.
     }
     
-
     
-    @IBAction func homeDropDownPressed(_ sender: UIButton) {
-        homeMenu.show()
-        homeMenu.selectionAction = {index, title in
-            self.homeCurrency.text = title
-            self.homeAbb.text = currenciesData.countryCurrencies[title]
+    @IBAction func checkRateBtnPressed(_ sender: UIButton) {
+        if let fromCurrency = fromAbb.text, let toCurrency = toAbb.text, let amountEntered = fromInput.text{
+            tradeManager.fetchTrade(from: fromCurrency, to: toCurrency, amount: amountEntered)
+        }
+        
+        
+    }
+    
+    
+    @IBAction func awayDropDownPressed(_ sender: UIButton) {
+        menu.show()
+        menu.selectionAction = {index, title in
+            self.toCurrencyName.text = title
+            self.toAbb.text = currenciesData.countryCurrencies[title]
         }
     }
     
-    @IBAction func awayDropDownPressed(_ sender: UIButton) {
-        awayMenu.show()
-        awayMenu.selectionAction = {index, title in
-            self.awayCurrency.text = title
-            self.awayAbb.text = currenciesData.countryCurrencies[title]
+    func didUpdateTrade(rate: String, result: String){
+        
+        DispatchQueue.main.sync {
+            self.toAmount.text = result
+            self.rateLabel.text = "1.00 USD = \(rate) \(self.toAbb.text!)"
         }
+        
+        
+    }
+    
+    func didFailWithError(error: Error) {
+        print(error)
     }
 }

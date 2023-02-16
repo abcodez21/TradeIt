@@ -4,8 +4,7 @@ class currenciesData {
     static let countryCurrencies = ["Kuwaiti Dinar": "KWD", "Bahraini Dinar": "BHD",
                                     "Omani Rial": "OMR", "Jordanian Dinar": "JOD",
                                     "Pound Sterling": "GBP", "Cayman Islands Dollar": "KYD",
-                                    "Euro": "EUR", "Swiss Franc": "CHF",
-                                    "US Dollar": "USD", "Canadian Dollar": "CAD",
+                                    "Euro": "EUR", "Swiss Franc": "CHF","Canadian Dollar": "CAD",
                                     "West African CFA Franc": "XOF", "Chinese Yuan": "CNY"]
     
     
@@ -15,3 +14,5 @@ class currenciesData {
                                    "Binance USD": "BUSD", "Cardano": "ADA",
                                    "Dogecoin": "DOGE", "Polygon": "MATIC"]
 }
+
+

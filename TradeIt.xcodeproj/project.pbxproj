@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2286DD35FE7B11A00799C1AB /* Pods_TradeIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E88F3D16D3EF01C4D092B5 /* Pods_TradeIt.framework */; };
+		EC4888BF299BDDBA003A6C83 /* TradeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4888BE299BDDBA003A6C83 /* TradeData.swift */; };
+		EC4888C1299BDDC8003A6C83 /* TradeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4888C0299BDDC8003A6C83 /* TradeManager.swift */; };
+		EC4888C3299D9914003A6C83 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4888C2299D9914003A6C83 /* Utilities.swift */; };
 		EC58267829987F64002E262B /* currenciesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58267729987F64002E262B /* currenciesData.swift */; };
-		EC58267A2998A9CF002E262B /* dataHangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5826792998A9CF002E262B /* dataHangle.swift */; };
 		EC5F65B32996D676001613C6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5F65B22996D676001613C6 /* HomeVC.swift */; };
 		EC5F65B82996D717001613C6 /* CryptoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5F65B72996D717001613C6 /* CryptoVC.swift */; };
 		EC5F65BA2996D769001613C6 /* CurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5F65B92996D769001613C6 /* CurrencyVC.swift */; };
@@ -24,11 +26,13 @@
 		25495374E952F6F40F5CCDF5 /* Pods-TradeIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradeIt.debug.xcconfig"; path = "Target Support Files/Pods-TradeIt/Pods-TradeIt.debug.xcconfig"; sourceTree = "<group>"; };
 		5437458B820B8896A3F7B1F9 /* Pods-TradeIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradeIt.release.xcconfig"; path = "Target Support Files/Pods-TradeIt/Pods-TradeIt.release.xcconfig"; sourceTree = "<group>"; };
 		E9E88F3D16D3EF01C4D092B5 /* Pods_TradeIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TradeIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4888BE299BDDBA003A6C83 /* TradeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeData.swift; sourceTree = "<group>"; };
+		EC4888C0299BDDC8003A6C83 /* TradeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeManager.swift; sourceTree = "<group>"; };
+		EC4888C2299D9914003A6C83 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		EC58267729987F64002E262B /* currenciesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currenciesData.swift; sourceTree = "<group>"; };
-		EC5826792998A9CF002E262B /* dataHangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataHangle.swift; sourceTree = "<group>"; };
 		EC5F65B22996D676001613C6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		EC5F65B72996D717001613C6 /* CryptoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoVC.swift; sourceTree = "<group>"; };
-		EC5F65B92996D769001613C6 /* CurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyVC.swift; sourceTree = "<group>"; };
+		EC5F65B92996D769001613C6 /* CurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyVC.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		EC8908042994745700DB0C06 /* TradeIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradeIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8908072994745700DB0C06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC8908092994745700DB0C06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EC4888BB299BDD76003A6C83 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EC58267729987F64002E262B /* currenciesData.swift */,
+				EC4888C2299D9914003A6C83 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		EC5F65B42996D698001613C6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,8 +101,8 @@
 		EC5F65B62996D6AB001613C6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EC58267729987F64002E262B /* currenciesData.swift */,
-				EC5826792998A9CF002E262B /* dataHangle.swift */,
+				EC4888BE299BDDBA003A6C83 /* TradeData.swift */,
+				EC4888C0299BDDC8003A6C83 /* TradeManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -117,6 +130,7 @@
 			children = (
 				EC8908072994745700DB0C06 /* AppDelegate.swift */,
 				EC8908092994745700DB0C06 /* SceneDelegate.swift */,
+				EC4888BB299BDD76003A6C83 /* Utilities */,
 				EC5F65B62996D6AB001613C6 /* Models */,
 				EC5F65B52996D6A4001613C6 /* Views */,
 				EC5F65B42996D698001613C6 /* Controllers */,
@@ -244,11 +258,13 @@
 			files = (
 				EC5F65B32996D676001613C6 /* HomeVC.swift in Sources */,
 				EC5F65BA2996D769001613C6 /* CurrencyVC.swift in Sources */,
+				EC4888BF299BDDBA003A6C83 /* TradeData.swift in Sources */,
 				EC58267829987F64002E262B /* currenciesData.swift in Sources */,
 				EC8908082994745700DB0C06 /* AppDelegate.swift in Sources */,
 				EC89080A2994745700DB0C06 /* SceneDelegate.swift in Sources */,
+				EC4888C3299D9914003A6C83 /* Utilities.swift in Sources */,
 				EC5F65B82996D717001613C6 /* CryptoVC.swift in Sources */,
-				EC58267A2998A9CF002E262B /* dataHangle.swift in Sources */,
+				EC4888C1299BDDC8003A6C83 /* TradeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
