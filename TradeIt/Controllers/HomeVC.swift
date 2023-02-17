@@ -6,12 +6,13 @@
 //
 
 import UIKit
-
+import CLTypingLabel
 class HomeVC: UIViewController {
 
+    @IBOutlet var AppNameLabel: CLTypingLabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        AppNameLabel.text = "Trade It"
         // Do any additional setup after loading the view.
     }
 

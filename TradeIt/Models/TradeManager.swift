@@ -1,6 +1,6 @@
 import Foundation
 import UIKit
-let apiKey = "EyWz53JJkD4ptnd0N1tnShUYUyNGVK3l"
+let apiKey = "bb9826b3d3bc49a599cc1370105082aa"
 
 protocol TradeManagerDelegate{
     func didUpdateTrade(rate: String, result: String)
@@ -10,10 +10,10 @@ protocol TradeManagerDelegate{
 struct TradeManager {
     var delegate: TradeManagerDelegate?
    
-    let Tradeurl = "https://api.apilayer.com/fixer/convert"
-    
+    let Tradeurl = "https://exchange-rates.abstractapi.com/v1/convert/"
+    // https://exchange-rates.abstractapi.com/v1/convert/?api_key=bb9826b3d3bc49a599cc1370105082aa&base=USD&target=EUR&base_amount=500
     func fetchTrade(from: String, to: String, amount: String){
-        let urlString = "\(Tradeurl)?apikey=\(apiKey)&to=\(to)&from=\(from)&amount=\(amount)"
+        let urlString = "\(Tradeurl)?api_key=\(apiKey)&target=\(to)&base=\(from)&base_amount=\(amount)"
         print(urlString)
         performRequest(urlString: urlString)
     }
@@ -48,8 +48,8 @@ struct TradeManager {
         let decoder = JSONDecoder()
         do{
            let decodedData = try decoder.decode(TradeData.self, from: tradeData)
-            let rate  = String(format: "%.2f", decodedData.info.rate)
-            let result = String(format: "%.2f", decodedData.result)
+            let rate  = String(format: "%.2f", decodedData.exchange_rate)
+            let result = String(format: "%.2f", decodedData.converted_amount)
             let finalData = [rate, result]
             return finalData
             

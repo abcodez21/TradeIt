@@ -34,7 +34,7 @@ class CurrencyVC: UIViewController, TradeManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        Utilities.editInput(input: fromInput)
         tradeManager.delegate = self
         
         rateLabel.text = ""
@@ -49,10 +49,11 @@ class CurrencyVC: UIViewController, TradeManagerDelegate {
     
     
     @IBAction func checkRateBtnPressed(_ sender: UIButton) {
-        if let fromCurrency = fromAbb.text, let toCurrency = toAbb.text, let amountEntered = fromInput.text{
-            tradeManager.fetchTrade(from: fromCurrency, to: toCurrency, amount: amountEntered)
+        if Utilities.isFilled(input: fromInput, labelDefault: "select a currency",  label: toCurrencyName){
+            if let fromCurrency = fromAbb.text, let toCurrency = toAbb.text, let amountEntered = fromInput.text{
+                tradeManager.fetchTrade(from: fromCurrency, to: toCurrency, amount: amountEntered)
+            }
         }
-        
         
     }
     

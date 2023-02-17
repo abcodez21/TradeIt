@@ -1,9 +1,6 @@
 import Foundation
 struct TradeData: Codable{
-    var result: Double
-    var info: Info
+    var exchange_rate: Double
+    var converted_amount: Double
 }
 
-struct Info: Codable{
-    var rate: Double
-}

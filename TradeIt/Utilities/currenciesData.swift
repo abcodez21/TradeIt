@@ -1,18 +1,16 @@
 import Foundation
 
 class currenciesData {
-    static let countryCurrencies = ["Kuwaiti Dinar": "KWD", "Bahraini Dinar": "BHD",
-                                    "Omani Rial": "OMR", "Jordanian Dinar": "JOD",
-                                    "Pound Sterling": "GBP", "Cayman Islands Dollar": "KYD",
-                                    "Euro": "EUR", "Swiss Franc": "CHF","Canadian Dollar": "CAD",
-                                    "West African CFA Franc": "XOF", "Chinese Yuan": "CNY"]
+    static let countryCurrencies = ["Pound Sterling": "GBP","Euro": "EUR",
+                                    "Swiss Franc": "CHF","Canadian Dollar": "CAD",
+                                    "Chinese Yuan": "CNY", "Algerian Dinar": "DZD",
+                                    "Indian Rupee": "INR", "Moroccan Dirham": "MAD",
+                                    "Mexican Peso": "MXN", "Russian Ruble": "RUB"]
     
     
     static let cryptoCurrencies = ["Bitcoin": "BTC", "Ethereum": "ETH",
-                                   "Tether": "USDT", "Binance Coin": "BNB",
-                                   "U.S. Dollar Coin": "USDC", "XRP": "XRP",
-                                   "Binance USD": "BUSD", "Cardano": "ADA",
-                                   "Dogecoin": "DOGE", "Polygon": "MATIC"]
+                                   "Binance Coin": "BNB","U.S. Dollar Coin": "USDC",
+                                   "Ripple": "XRP","Dogecoin": "DOGE","Litecoin": "LTC"]
 }
 
 

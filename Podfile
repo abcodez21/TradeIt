@@ -4,6 +4,8 @@ platform :ios, '11.0'
 target 'TradeIt' do
   use_frameworks!
   pod 'DropDown'
+  pod 'IQKeyboardManagerSwift'
+  pod 'CLTypingLabel'
 
 
 	

@@ -40,7 +40,8 @@ class CryptoVC: UIViewController, TradeManagerDelegate {
         tradeManager.delegate = self
         rateLabel.text = ""
         
-        
+        Utilities.editInput(input: cryptoInput)
+
         
         cryptoMenu.anchorView = cryptoLabel
         cryptoMenu.width = 350
@@ -51,8 +52,10 @@ class CryptoVC: UIViewController, TradeManagerDelegate {
     
     
     @IBAction func checkRateBtnPressed(_ sender: UIButton) {
-        if let fromCurrency = cryptoAbb.text, let toCurrency = currencyAbb.text, let amountEntered = cryptoInput.text{
-            tradeManager.fetchTrade(from: fromCurrency, to: toCurrency, amount: amountEntered)
+        if Utilities.isFilled(input: cryptoInput,   label: cryptoLabel){
+            if let fromCurrency = cryptoAbb.text, let toCurrency = currencyAbb.text, let amountEntered = cryptoInput.text{
+                tradeManager.fetchTrade(from: fromCurrency, to: toCurrency, amount: amountEntered)
+            }
         }
     }
     
