@@ -13,7 +13,7 @@ Trade It assists user in checking currency exchanges including crypto
 * allows users to enter amount desire to exchange
 
 
-## Get start
+## Get started
 
 ### Select crypto or normal currency
 * when user opens the app there will be two buttons on the screen that state "Exchange Crypto" & "Exchange Currency".
