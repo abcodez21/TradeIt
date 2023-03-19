@@ -1,5 +1,5 @@
 # TradeIt
-Trade It assists user in checking currency exchanges including crypto
+Trade It assists users in checking currency exchanges including crypto
 
 ## Screenshots
 
