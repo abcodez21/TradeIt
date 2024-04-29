@@ -27,6 +27,9 @@ Trade It assists users in checking currency exchanges including crypto
 * finally press the "check rate" button.
 
 
-https://user-images.githubusercontent.com/124530691/219901729-28055e31-ccb4-4747-8d12-9a71f536d8e3.mov
+
+https://github.com/abcodez21/TradeIt/assets/124530691/e1dabfac-ed0e-40e2-965a-c50a8c6ca2ac
+
+
 
 
