@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2286DD35FE7B11A00799C1AB /* Pods_TradeIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E88F3D16D3EF01C4D092B5 /* Pods_TradeIt.framework */; };
+		EC4888BF299BDDBA003A6C83 /* TradeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4888BE299BDDBA003A6C83 /* TradeData.swift */; };
+		EC4888C1299BDDC8003A6C83 /* TradeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4888C0299BDDC8003A6C83 /* TradeManager.swift */; };
+		EC4888C3299D9914003A6C83 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4888C2299D9914003A6C83 /* Utilities.swift */; };
+		EC58267829987F64002E262B /* currenciesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58267729987F64002E262B /* currenciesData.swift */; };
+		EC5F65B32996D676001613C6 /* TIHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5F65B22996D676001613C6 /* TIHomeVC.swift */; };
+		EC5F65B82996D717001613C6 /* TICryptoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5F65B72996D717001613C6 /* TICryptoVC.swift */; };
+		EC5F65BA2996D769001613C6 /* TICurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5F65B92996D769001613C6 /* TICurrencyVC.swift */; };
+		EC8908082994745700DB0C06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8908072994745700DB0C06 /* AppDelegate.swift */; };
+		EC89080A2994745700DB0C06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8908092994745700DB0C06 /* SceneDelegate.swift */; };
+		EC89080F2994745700DB0C06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC89080D2994745700DB0C06 /* Main.storyboard */; };
+		EC8908112994745A00DB0C06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8908102994745A00DB0C06 /* Assets.xcassets */; };
+		EC8908142994745A00DB0C06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8908122994745A00DB0C06 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		25495374E952F6F40F5CCDF5 /* Pods-TradeIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradeIt.debug.xcconfig"; path = "Target Support Files/Pods-TradeIt/Pods-TradeIt.debug.xcconfig"; sourceTree = "<group>"; };
+		5437458B820B8896A3F7B1F9 /* Pods-TradeIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradeIt.release.xcconfig"; path = "Target Support Files/Pods-TradeIt/Pods-TradeIt.release.xcconfig"; sourceTree = "<group>"; };
+		E9E88F3D16D3EF01C4D092B5 /* Pods_TradeIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TradeIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4888BE299BDDBA003A6C83 /* TradeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeData.swift; sourceTree = "<group>"; };
+		EC4888C0299BDDC8003A6C83 /* TradeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeManager.swift; sourceTree = "<group>"; };
+		EC4888C2299D9914003A6C83 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		EC58267729987F64002E262B /* currenciesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currenciesData.swift; sourceTree = "<group>"; };
+		EC5F65B22996D676001613C6 /* TIHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TIHomeVC.swift; sourceTree = "<group>"; };
+		EC5F65B72996D717001613C6 /* TICryptoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TICryptoVC.swift; sourceTree = "<group>"; };
+		EC5F65B92996D769001613C6 /* TICurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TICurrencyVC.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		EC8908042994745700DB0C06 /* TradeIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradeIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8908072994745700DB0C06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC8908092994745700DB0C06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EC89080E2994745700DB0C06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC8908102994745A00DB0C06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC8908132994745A00DB0C06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC8908152994745A00DB0C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC8908012994745700DB0C06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2286DD35FE7B11A00799C1AB /* Pods_TradeIt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39A44291BB03741E6C2C30F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9E88F3D16D3EF01C4D092B5 /* Pods_TradeIt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		578EAD846881E004A63BB1BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25495374E952F6F40F5CCDF5 /* Pods-TradeIt.debug.xcconfig */,
+				5437458B820B8896A3F7B1F9 /* Pods-TradeIt.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC4888BB299BDD76003A6C83 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC8908072994745700DB0C06 /* AppDelegate.swift */,
+				EC8908092994745700DB0C06 /* SceneDelegate.swift */,
+				EC4888C2299D9914003A6C83 /* Utilities.swift */,
+				EC58267729987F64002E262B /* currenciesData.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC5F65B42996D698001613C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC5F65B22996D676001613C6 /* TIHomeVC.swift */,
+				EC5F65B72996D717001613C6 /* TICryptoVC.swift */,
+				EC5F65B92996D769001613C6 /* TICurrencyVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC5F65B52996D6A4001613C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC89080D2994745700DB0C06 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC5F65B62996D6AB001613C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC4888BE299BDDBA003A6C83 /* TradeData.swift */,
+				EC4888C0299BDDC8003A6C83 /* TradeManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC8907FB2994745700DB0C06 = {
+			isa = PBXGroup;
+			children = (
+				EC8908062994745700DB0C06 /* TradeIt */,
+				EC8908052994745700DB0C06 /* Products */,
+				578EAD846881E004A63BB1BA /* Pods */,
+				39A44291BB03741E6C2C30F3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC8908052994745700DB0C06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC8908042994745700DB0C06 /* TradeIt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC8908062994745700DB0C06 /* TradeIt */ = {
+			isa = PBXGroup;
+			children = (
+				EC4888BB299BDD76003A6C83 /* Resources */,
+				EC5F65B62996D6AB001613C6 /* Models */,
+				EC5F65B52996D6A4001613C6 /* Views */,
+				EC5F65B42996D698001613C6 /* Controllers */,
+				EC8908102994745A00DB0C06 /* Assets.xcassets */,
+				EC8908122994745A00DB0C06 /* LaunchScreen.storyboard */,
+				EC8908152994745A00DB0C06 /* Info.plist */,
+			);
+			path = TradeIt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC8908032994745700DB0C06 /* TradeIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8908182994745A00DB0C06 /* Build configuration list for PBXNativeTarget "TradeIt" */;
+			buildPhases = (
+				ED4F1EDA39E0B785AA7292A5 /* [CP] Check Pods Manifest.lock */,
+				EC8908002994745700DB0C06 /* Sources */,
+				EC8908012994745700DB0C06 /* Frameworks */,
+				EC8908022994745700DB0C06 /* Resources */,
+				58929D0589976E397051F1FC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TradeIt;
+			productName = TradeIt;
+			productReference = EC8908042994745700DB0C06 /* TradeIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC8907FC2994745700DB0C06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					EC8908032994745700DB0C06 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = EC8907FF2994745700DB0C06 /* Build configuration list for PBXProject "TradeIt" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC8907FB2994745700DB0C06;
+			productRefGroup = EC8908052994745700DB0C06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC8908032994745700DB0C06 /* TradeIt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC8908022994745700DB0C06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8908142994745A00DB0C06 /* LaunchScreen.storyboard in Resources */,
+				EC8908112994745A00DB0C06 /* Assets.xcassets in Resources */,
+				EC89080F2994745700DB0C06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58929D0589976E397051F1FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TradeIt/Pods-TradeIt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TradeIt/Pods-TradeIt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TradeIt/Pods-TradeIt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED4F1EDA39E0B785AA7292A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TradeIt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC8908002994745700DB0C06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5F65B32996D676001613C6 /* TIHomeVC.swift in Sources */,
+				EC5F65BA2996D769001613C6 /* TICurrencyVC.swift in Sources */,
+				EC4888BF299BDDBA003A6C83 /* TradeData.swift in Sources */,
+				EC58267829987F64002E262B /* currenciesData.swift in Sources */,
+				EC8908082994745700DB0C06 /* AppDelegate.swift in Sources */,
+				EC89080A2994745700DB0C06 /* SceneDelegate.swift in Sources */,
+				EC4888C3299D9914003A6C83 /* Utilities.swift in Sources */,
+				EC5F65B82996D717001613C6 /* TICryptoVC.swift in Sources */,
+				EC4888C1299BDDC8003A6C83 /* TradeManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC89080D2994745700DB0C06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC89080E2994745700DB0C06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC8908122994745A00DB0C06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC8908132994745A00DB0C06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC8908162994745A00DB0C06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC8908172994745A00DB0C06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC8908192994745A00DB0C06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25495374E952F6F40F5CCDF5 /* Pods-TradeIt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQ86CX5QSX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TradeIt/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abdallahiT.TradeIt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC89081A2994745A00DB0C06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5437458B820B8896A3F7B1F9 /* Pods-TradeIt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQ86CX5QSX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TradeIt/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abdallahiT.TradeIt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC8907FF2994745700DB0C06 /* Build configuration list for PBXProject "TradeIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8908162994745A00DB0C06 /* Debug */,
+				EC8908172994745A00DB0C06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC8908182994745A00DB0C06 /* Build configuration list for PBXNativeTarget "TradeIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8908192994745A00DB0C06 /* Debug */,
+				EC89081A2994745A00DB0C06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC8907FC2994745700DB0C06 /* Project object */;
+}
